@@ -4,7 +4,7 @@ require_dependency File.dirname(__FILE__) + '/lib/easyredmine_budget_quotas/easy
 require_dependency File.dirname(__FILE__) + '/lib/easyredmine_budget_quotas/easy_patch/easy_activity_query'
 require_dependency File.dirname(__FILE__) + '/lib/easyredmine_budget_quotas/easy_patch/modal_selector_controller_extension'
 
-ActionDispatch::Reloader.to_prepare do
+RedmineExtensions::Reloader.to_prepare do
   require_dependency 'easyredmine_budget_quotas/hooks'
 end
 
