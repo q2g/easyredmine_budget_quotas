@@ -1,3 +1,5 @@
+require 'redmine'
+
 Redmine::Plugin.register :easyredmine_budget_quotas do
   name 'BudgetQuotas for EasyRedmine'
   author 'Florian Eck for akquinet'
@@ -10,10 +12,10 @@ Redmine::Plugin.register :easyredmine_budget_quotas do
 
 end
 
-require 'easyredmine_budget_quotas'
-require 'easyredmine_budget_quotas/project_budget_quota'
-require 'easyredmine_budget_quotas/time_entry_validation'
-require 'easyredmine_budget_quotas/hooks'
+require_relative 'lib/easyredmine_budget_quotas'
+require_relative 'lib/easyredmine_budget_quotas/project_budget_quota'
+require_relative 'lib/easyredmine_budget_quotas/time_entry_validation'
+require_relative 'lib/easyredmine_budget_quotas/hooks'
 
 
 
