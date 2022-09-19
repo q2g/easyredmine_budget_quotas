@@ -9,7 +9,7 @@ RedmineExtensions::Reloader.to_prepare do
 end
 
 EasyExtensions::EasyLookups::EasyLookup.map do |easy_lookup|
-  easy_lookup.register EasyPatch::EasyLookupBudgetQuotaActivity.new
+  easy_lookup.register 'EasyPatch::EasyLookupBudgetQuotaActivity'
 end
 
 ModalSelectorsController.send :include, EasyPatch::ModelSelectorControllerExtension
