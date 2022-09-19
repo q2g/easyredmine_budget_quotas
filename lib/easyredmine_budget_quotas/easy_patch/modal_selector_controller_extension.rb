@@ -1,3 +1,4 @@
+module EasyredmineBudgetQuotas
 module EasyPatch
   module ModelSelectorControllerExtension
     def time_entry_activity
@@ -18,4 +19,5 @@ module EasyPatch
     end
     
   end
+end
 end
